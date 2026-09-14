@@ -2,6 +2,8 @@
 
 A responsive React app that helps a group choose a tabletop game they can play tonight. Set the group size, time budget, teaching allowance, and each person's mood; get explainable matches, choose a game, and share the plan.
 
+**Live app:** https://one-more-round-ebon.vercel.app · **Public source:** https://github.com/sameerkhoja/one-more-round
+
 ## Run locally
 
 Node 22 and npm are required.
@@ -45,3 +47,7 @@ React 19 + Vite, Lucide icons, locally bundled DM Sans and Space Grotesk fonts. 
 Matching and share-state logic lives in `src/catalog.mjs`; UI and styles are in `src/main.jsx` and `src/style.css`. Original vector illustrations are in `src/Art.jsx`.
 
 Research notes and data references: [docs/RESEARCH.md](docs/RESEARCH.md). Browser screenshots: [desktop](docs/desktop.png), [phone](docs/phone.png), [night plan](docs/night-plan.png).
+
+## Deployment
+
+Published to Vercel with the CLI. GitHub Actions runs the automated checks on every push. Vercel’s GitHub app connection was unavailable, so automatic deployment on push is not configured; redeploy with the Vercel CLI from this project.
